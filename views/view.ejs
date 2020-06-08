@@ -1,0 +1,27 @@
+<% file %> 
+<% dir %>
+
+<!-- back button -->
+<button onclick = "goBack()" >←	 Back</button>
+
+<!-- current path -->
+<h3 id = "curr" path = '<%= curr %>'>PATH: <%=curr %></h3>
+
+<!-- directory -->
+<% dir.forEach(val => { %>
+    <div id = "dir">
+        <button onclick="getFile(this)" name='<%= val %>'><%= val %></button>
+    </div>
+<% }) %>
+<br>
+
+<!-- files -->
+<% file.forEach(val => { %>
+    <div id = "file">
+        <form action="download" method="post">
+            <h4><%= val %></h4>
+            <input type="text" name="path" value='<%= curr %>' hidden>
+            <button type="submit"  name="fileName" value='<%= val %>'>↓ Download</button>
+        </form>
+    </div>
+<% }) %>

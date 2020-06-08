@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="view.css">
+</head>
+<body>
+    <div id = "main">
+        <h3>Directory Name</h3>
+        <div>
+            Enter: 
+            <input type="text" id="dir1" placeholder="directory name" autocomplete="off" >
+            <button onclick="loadFile1()">go</button>
+        </div>        
+        <h3>or</h3>
+        <div>
+            Select:
+            <select id="dir">
+                <option value="C:/">C:/</option>
+                <option value="D:/">D:/</option>
+                <option value="E:/">E:/</option>
+                <option value="F:/">F:/</option>
+                <option value="G:/">G:/</option>
+            </select>
+            <button onclick="loadFile()">go</button>    
+        </div>
+    </div>
+    <div type="text" id = "ip" ip= '<%= ip %>'></div>
+    <script src="home.js"></script>
+    <script src="view.js"></script>
+</body>
+</html>
