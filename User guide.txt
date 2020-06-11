@@ -1,0 +1,18 @@
+*note: To run this application you need "Node" application installed in your pc(To check whether it is installed, type "node --version" in command prompt, if already node installed then it returns version of node application, otherwise it shows error)
+
+Steps to start the server:
+
+Method 1: (Quick way)
+1. Connect your pc with Wifi network. (*Internet not required)
+2. Open the file share web folder.
+3. Type cmd on above path location representation
+4. Enter "npm run app"
+
+Method 2:
+1. Connect your pc with Wifi network. (*Internet not required)
+2. Open command prompt in your windows pc
+	(To open command prompt, goto run(press "windows button" and "R" at the same time) -> type cmd and enter)
+3. Type this cmd "cd FILE_PATH" (FILE_PATH should be where your files are located. Ensure that it end with "/file share web")
+4. Now to start the server enter "npm run app" 
+
+Hurray!!! Now you can able to access the files present in this pc from other devices in same network with any browsers by entering the ip address shown in cmd.	
